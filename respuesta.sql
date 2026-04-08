@@ -11,7 +11,7 @@ WHERE NOT EXISTS (
         AND o.employeeid = e.employeeid
     )
 );
-SELECT c.companyname
+SELECT c.contactname
 FROM customers c
 WHERE (
     SELECT MAX(od.unitprice)
